@@ -1,6 +1,8 @@
 // Lessons imports
 // import Lesson05 from "./lessons/Lesson05/Lesson05";
-import Lesson06 from "./lessons/Lesson06/Lesson06";
+// import Lesson06 from "./lessons/Lesson06/Lesson06";
+
+import Homework06 from "./components/Homework06/Homework06";
 
 // Homeworks imports
 
@@ -13,7 +15,8 @@ function App() {
       {/* Lesson05. TypeScript */}
       {/* <Lesson05 /> */}
       {/* Lesson06. Component typing */}
-      <Lesson06/>
+      {/* <Lesson06/> */}
+      <Homework06/>
     </>
   );
 }
