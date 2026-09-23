@@ -1,10 +1,12 @@
-// Упрощенный иморт стилей
-import "./styles.css"
-import type { ButtonProps } from "./types"
+import type { ButtonProps } from "./types";
+import { MyButton } from "./styles";
 
-function Button({name, type="button", onClick}: ButtonProps){
-    return <button className="my-button" type={type} onClick={onClick}>{name}</button>
+function Button({ name, type = "button", onClick }: ButtonProps) {
+  return (
+    <MyButton type={type} onClick={onClick}>
+      {name}
+    </MyButton>
+  );
 }
 
-// Компоненты экспортируем по умолчанию 
-export default Button
+export default Button;

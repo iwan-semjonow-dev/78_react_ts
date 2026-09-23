@@ -1,4 +1,4 @@
-Homework 05:
+// Homework 05:
 
 let age: number = 25;
 
