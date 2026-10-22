@@ -14,6 +14,8 @@ import Lesson08 from "./lessons/Lesson08/Lesson08";
 import Lesson09 from "./lessons/Lesson09/Lesson09";
 import Lesson10 from "./lessons/Lesson10/Lesson10";
 import Lesson12 from "./lessons/Lesson12/Lesson12";
+import Home from "./pages/Home/Home";
+import Lesson15 from "./pages/Lesson15/Lesson15";
 // Homeworks imports
 
 function App() {
@@ -25,7 +27,7 @@ function App() {
       <GlobalStyles />
       <Layout>
         <Routes>
-          <Route path="/" element={<div>Home</div>} />
+          <Route path="/" element={<Home />} />
           <Route path="/lesson-05" element={<Lesson05 />} />
           <Route path="/lesson-06" element={<Lesson06 />} />
           <Route path="/lesson-07" element={<Lesson07 />} />
@@ -34,9 +36,15 @@ function App() {
           <Route path="/lesson-10" element={<Lesson10 />} />
           <Route path="/homework-10" element={<Homework10 />} />
           <Route path="/lesson-12" element={<Lesson12 />} />
+          
           {/* Lesson 14. React Router */}
           <Route path="/users" element={<Users />} />
           <Route path="/users/admin" element={<AdminUser />} />
+
+          {/* Lesson 15. Context API */}
+          <Route path="/lesson-15" element={<Lesson15 />} />
+
+          {/* Page Not Found */}
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Layout>
